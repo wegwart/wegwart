@@ -1,5 +1,7 @@
 # build
 build_debug/
 build_release/
-# QT
+# QT Creator
 CMakeLists.txt.user
+# Visual Studio Code
+.vscode

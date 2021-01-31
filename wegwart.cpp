@@ -1,6 +1,8 @@
-#include <stdio.h>
+#include <iostream>
+#include "src/adapter.h"
 
 int main() {
-   printf("Hello, Wegwart!");
+   std::cout << "Hello, Wegwart!" << std::endl;
+   auto test = Adapter::Create("test");
    return 0;
 }
