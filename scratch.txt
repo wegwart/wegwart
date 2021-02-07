@@ -2,3 +2,10 @@
 
 https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
+7.2.2021
+
+pip install -r requirements.txt
+
+conan install . -s build_type=Debug
+
+pushd build && cmake --build . && popd

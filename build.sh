@@ -3,19 +3,11 @@
 set -e
 set -x
 
-rm -rf build_release
-mkdir build_release
-pushd build_release
+rm -rf build
+mkdir build
+pushd build
 
-cmake .. -DCMAKE_BUILD_TYPE=Release
-cmake --build .
-
-popd
-
-rm -rf build_debug
-mkdir build_debug
-
-pushd build_debug
+conan install .. -s build_type=Debug
 
 cmake .. -DCMAKE_BUILD_TYPE=Debug
 cmake --build .
