@@ -7,7 +7,7 @@ rm -rf build
 mkdir build
 pushd build
 
-conan install .. -s build_type=Debug
+#conan install .. -s build_type=Debug
 
 cmake .. -DCMAKE_BUILD_TYPE=Debug
 cmake --build .

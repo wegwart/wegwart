@@ -9,3 +9,5 @@ pip install -r requirements.txt
 conan install . -s build_type=Debug
 
 pushd build && cmake --build . && popd
+
+./build/bin/wegwart
