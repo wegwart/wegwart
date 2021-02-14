@@ -17,11 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install Wheel
-      run: pip install wheel
-
-    - name: Install Conan      
-      run: pip install conan --user
+    - name: Install Requirements
+      run: python3 -m venv .venv && source .venv/bin/activate && pip install wheel && pip install conan
 
     - name: Create Build Environment
       # Some projects don't allow in-source building, so create a separate build directory

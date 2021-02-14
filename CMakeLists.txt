@@ -17,6 +17,9 @@ endif()
 
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
+message(STATUS "conan_check...")
+conan_check()
+
 message(STATUS "conan_cmake_run...")
 conan_cmake_run(CONANFILE conanfile.txt
                 BASIC_SETUP) #CMAKE_TARGETS)

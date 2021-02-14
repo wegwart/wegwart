@@ -6,3 +6,4 @@ build_release/
 CMakeLists.txt.user
 # Visual Studio Code
 .vscode
+.venv
