@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: install apt packages
-      run: apt-get install python3 python3-venv build-essential
+      run: sudo apt-get install python3 python3-venv build-essential
 
     - name: install pip packages
       run: python3 -m venv .venv && source .venv/bin/activate && pip install cmake conan
