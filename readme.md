@@ -10,7 +10,7 @@ source .venv/bin/activate && ./build.sh
 
 # Build 
 cd build \
-make \
-or \
 cmake --build . -j4 \
+or 
+make
 
