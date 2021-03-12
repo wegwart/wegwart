@@ -9,8 +9,8 @@ python3 -m venv .venv && source .venv/bin/activate && pip install -r requirement
 source .venv/bin/activate && ./build.sh
 
 # Build 
-cd build
-make
-or 
-cmake --build . -j4
+cd build \
+make \
+or \
+cmake --build . -j4 \
 
